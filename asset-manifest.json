@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/siddharth/static/css/main.058f510e.css",
+    "main.js": "/siddharth/static/js/main.da414736.js",
+    "static/js/787.1ed0c42c.chunk.js": "/siddharth/static/js/787.1ed0c42c.chunk.js",
+    "static/media/video.mp4": "/siddharth/static/media/video.b3cc5e68e46b962649d5.mp4",
+    "static/media/sid3.jpg": "/siddharth/static/media/sid3.e60659b6ab18034815f7.jpg",
+    "static/media/sid1.jpg": "/siddharth/static/media/sid1.db166e9293f2b7e5a497.jpg",
+    "static/media/sid2.jpg": "/siddharth/static/media/sid2.d605b432ba03a3b349d5.jpg",
+    "index.html": "/siddharth/index.html",
+    "main.058f510e.css.map": "/siddharth/static/css/main.058f510e.css.map",
+    "main.da414736.js.map": "/siddharth/static/js/main.da414736.js.map",
+    "787.1ed0c42c.chunk.js.map": "/siddharth/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.058f510e.css",
+    "static/js/main.da414736.js"
+  ]
+}

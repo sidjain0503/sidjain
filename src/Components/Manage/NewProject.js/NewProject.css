@@ -1,0 +1,19 @@
+.modal-input{
+    margin: 5px 0px;
+    width: 100%;
+}
+.modal-input label , .modal-input textarea, .modal-input input{
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+   
+}
+.modal-close-btn{
+    color: black;
+}
+
+
+.modal-input textarea,.modal-input input{
+    border: 1px solid #dddd;
+
+}

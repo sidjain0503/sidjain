@@ -1,0 +1,30 @@
+
+.admin-form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.admin-form input,.admin-form button{
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+}
+
+@media screen and (max-width:900px) {
+
+    .admin-form{
+        min-height: 50vh;
+        max-height: 70vh;
+    }
+.admin-form input,.admin-form button{
+    width: 100%;
+}
+}

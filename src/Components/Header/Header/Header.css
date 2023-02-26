@@ -1,0 +1,192 @@
+.header{
+    margin: 0%;
+    height: 100px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  background-color: #1a1a1a;
+
+}
+.new{
+    width: 80%;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    
+
+}
+.long_head{
+    height: max-content;
+    transition: height 1s;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#active{
+    border-bottom:2px solid black;
+
+}
+
+.link{
+    margin: 10px 35px 10px 35px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-bottom: 2px;
+    color: white;
+}
+.link:hover{
+    border-bottom:2px dashed white;
+
+}
+
+.active{
+    color: #ffd660;
+    border-bottom:2px dashed white;
+
+}
+/* .pages>.link:hover{
+    color: aqua;
+} */
+
+#h_lt{
+    border-radius: 52px;
+    height: 40px;
+    color: #474EFA;
+}
+
+.h_links{
+    display: none ;
+}
+#b_menu{
+    display: block;
+}
+
+.close_sidenav{
+    /* display: none; */
+    height: 70px;
+    transition: height 1s;
+
+}
+#b_menu,#cross{
+    display: none;
+}
+
+.none{
+    display: none !important;
+
+}
+.display{
+    display: block;
+}
+#hire{
+    transition: color 350ms ease;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+#hire:hover{
+    color: #ffd660;
+  
+}
+
+@keyframes open_nav {
+    from {height: 100px;}
+    to {height: 450px;}
+  }
+
+
+
+@media only screen and (max-width: 1100px) {
+
+
+    .h_links>div{
+        cursor: pointer;
+    }
+
+    .free-dropdown>h1{
+        font-size: 14px;
+    }
+
+    .free-dropdown>span:hover{
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    .free-dropdown>span{
+        font-size: 12px;
+        display: block;
+        text-align: left;
+        width: 35%;
+        padding: 1%;
+        margin: auto;
+    }
+    .free-dropdown>h1{
+        cursor: pointer;
+    }
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+    #b_menu,#cross{
+        display: inline;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+   
+    .pages{
+        display: none;
+    }
+
+    .new{
+        height: 95px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+
+    }
+.h_links{  
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}   
+
+.h_links>div{
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+}
+.res>span{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.res>span>img{
+    width: 24px;
+
+}
+#hide{
+    /* display: ; */
+    display: none;
+    /* visibility: hidden; */
+}

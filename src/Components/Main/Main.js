@@ -81,7 +81,7 @@ function Main() {
                 <h1 style={{ textAlign: "center", margin: "50px 0px", color: "#ffd660" }}>
                     <Typewriter
                         options={{
-                            strings: ['<WEB DEVELOPER', '<FULL-STACK',"<MERN STACK", '<FREELANCER', '<LEARNER'],
+                            strings: ['<WEB DEVELOPER', '<OPEN SOURCE', '<FULL-STACK',"<MERN STACK", '<FREELANCER'],
                             autoStart: true,
                             loop: true,
                         }}
@@ -99,7 +99,7 @@ function Main() {
                                     onClick={() => selectProp("Education")}>Education🖋</div>
                                 <div data-w-id="bf61b558-61fc-3548-0ece-d9bd814737b8" class="small-circle green"
                                     onClick={() => selectProp("Skills")}>Skills🏏</div>
-                            </div></div><div class="code-holder"><div class="fade-in-move-on-scroll"><p class="_20px-paragraph">/**</p></div><div class="fade-in-move-on-scroll" ><p
+                            </div></div><div class="code-holder"><div class="fade-in-move-on-scroll"><p class="_20px-paragraph"></p></div><div class="fade-in-move-on-scroll" ><p
                                 class="_20px-paragraph yellow-text">
                                 {Info.map((i) => {
                                     return <>
@@ -148,7 +148,7 @@ function Main() {
 
                                     </>
                                 })}
-                            </p></div><div class="fade-in-move-on-scroll" ><p class="_20px-paragraph">**/</p></div></div></div>
+                            </p></div><div class="fade-in-move-on-scroll" ><p class="_20px-paragraph"></p></div></div></div>
                     </div>
                     {props === "Intro" ? <>
                         <img src={img3} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />

@@ -16,7 +16,7 @@ function Project({ image, tech, title, p1,p2,link,code}) {
 
               {tech.map((t) => {
                 return <>
-                  <button style={{ padding: "10px", fontSize: "calc(14px + 0.5vw)", borderRadius: "15px", color: "black", fontWeight: "600", display: "inline", margin: "0px 5px", backgroundColor: "#a77c1f" }}>
+                  <button style={{ padding: "10px", fontSize: "calc(14px + 0.5vw)", borderRadius: "15px", color: "black", fontWeight: "600", display: "inline", margin: "10px 5px", backgroundColor: "#a77c1f" }}>
                     {t}
                   </button>
                 </>

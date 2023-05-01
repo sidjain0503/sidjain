@@ -13,8 +13,8 @@ const customStyles = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
-        width: "300px",
-        height: "max-content",
+        width: "80vw",
+        height: "80vh",
         boxShadow: " 0px 4px 30px rgba(0, 0, 0, 0.12)",
         borderRadius: "8px",
         zIndex:"100"
@@ -156,6 +156,12 @@ function NewProject() {
                         <div className="modal-input">
                             <label htmlFor="link" className="label">Live Link </label>
                             <input type="text" name="link" id="link" onChange={handleChange} />
+
+                        </div>
+
+                        <div className="modal-input">
+                            <label htmlFor="video" className="label">Video Link </label>
+                            <input type="text" name="video" id="video" onChange={handleChange} />
 
                         </div>
 

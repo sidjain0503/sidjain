@@ -5,3 +5,26 @@
     color: rgb(97, 92, 245);
 
 }
+
+
+.blog-image-holder{
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-image-holder:hover img {
+    opacity: 0.2;
+  }
+
+  .blog-image-holder span{
+    position: relative;
+    top: -55%;
+    left: 25%;
+    font-size: 26px;
+    color: white;
+    opacity: 0;
+    text-decoration: underline;
+  }
+
+  .blog-image-holder:hover span {
+    opacity: 1;
+  }

@@ -44,7 +44,7 @@ function Projects() {
       {loader === true ? <>
         {Projects.map((p) => {
           return <>
-            <Project image={p.img} p1={p.para1} p2={p.para2} title={p.title} tech={p.Tech} link={p.link} code={p.code} />
+            <Project image={p.img} p1={p.para1} p2={p.para2} title={p.title} tech={p.Tech} link={p.link} code={p.code} video={p.video} />
           </>
         })}
       </> :

@@ -9,6 +9,10 @@ import { Link } from 'react-router-dom';
 import { collection, getDocs, limit, query } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { Circles } from 'react-loader-spinner'
+import { motion } from "framer-motion";
+import Readme from './Readme';
+
+
 
 function Main() {
 
@@ -71,7 +75,9 @@ function Main() {
     }, [loader])
 
 
-
+    const animationVariants = {
+        hover: { scale: 1.1 }
+    }
 
     return (<>
         {loader === true ? <>
@@ -81,20 +87,32 @@ function Main() {
                 <h1 style={{ textAlign: "center", margin: "50px 0px", color: "#ffd660" }}>
                     <Typewriter
                         options={{
-                            strings: ['<WEB DEVELOPER', '<OPEN SOURCE', '<FULL-STACK',"<MERN STACK", '<FREELANCER'],
+                            strings: ['<WEB DEVELOPER', '<OPEN SOURCE', '<FULL-STACK', "<MERN STACK", '<FREELANCER'],
                             autoStart: true,
                             loop: true,
                         }}
                     />
                 </h1>
-                <h3 style={{ color: "hsl(242deg 88% 66%)" }}>Hi , I am Siddharth Chopda 👋 </h3>
+                <motion.h3
+
+                    initial={{ x: "150px" }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+
+                    style={{ color: "hsl(242deg 88% 66%)" }}>Hi , I am Siddharth Chopda 👋 </motion.h3>
 
                 <div className="intro" style={{ display: "flex", justifyContent: "space-between" }}>
-                    <div className="back-card-holder" style={{ width: "65%" }}>
+                    <motion.div
+
+                        initial={{ x: "-150px" }}
+                        animate={{ x: 0 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+
+                        className="back-card-holder" style={{ width: "65%" }}>
                         <div class="card-padding-holder"><div class="front-card-header-holder black">
                             <div class="browser-menu" >
                                 <div data-w-id="bf61b558-61fc-3548-0ece-d9bd814737b6" class="small-circle normal"
-                                    onClick={() => selectProp("Intro")}>About me 😀</div>
+                                    onClick={() => selectProp("Intro")}>Who am I  😀</div>
                                 <div data-w-id="bf61b558-61fc-3548-0ece-d9bd814737b7" class="small-circle yellow"
                                     onClick={() => selectProp("Education")}>Education🖋</div>
                                 <div data-w-id="bf61b558-61fc-3548-0ece-d9bd814737b8" class="small-circle green"
@@ -106,14 +124,20 @@ function Main() {
 
 
                                         {props === "Intro" ? <>
-                                            <strong style={{ color: "white", fontSize: '28px' }}>About me ~</strong>
-                                            <p>
-                                                {i.about_me}
+                                            <strong style={{ color: "white", fontSize: '28px' }}>About me  </strong>
+                                            <p style={{ fontSize: "18px", fontWeight: "400" }}>
+                                                {i.about_me.map((m) => {
+                                                    return <>
+                                                        {m}
+                                                        <br /><br />
+                                                    </>
+
+                                                })}
                                             </p>
                                         </> : null}
 
                                         {props === "Education" ? <>
-                                            <strong style={{ color: "white", fontSize: '28px' }}>Education ~</strong>
+                                            <strong style={{ color: "white", fontSize: '28px' }}>Education </strong>
 
                                             {i.education.map((ed) => {
                                                 return <>
@@ -129,7 +153,7 @@ function Main() {
 
 
 
-                                            <strong style={{ color: "white", fontSize: '28px' }}>Skills ~</strong>
+                                            <strong style={{ color: "white", fontSize: '28px' }}>Skills </strong>
                                             <p>
                                                 <strong style={{ color: "white" }}>Tech Skills ~ </strong>
                                                 {i.Skills.Tech.map((t) => {
@@ -149,21 +173,46 @@ function Main() {
                                     </>
                                 })}
                             </p></div><div class="fade-in-move-on-scroll" ><p class="_20px-paragraph"></p></div></div></div>
-                    </div>
+                    </motion.div>
                     {props === "Intro" ? <>
-                        <img src={img3} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
+                        <motion.img
+
+                            initial={{ x: "150px" }}
+                            animate={{ x: 0 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            whileHover="hover"
+                            variants={animationVariants}
+
+                            src={img3} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
 
                     </> : null}
                     {props === "Education" ? <>
-                        <img src={img2} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
+                        <motion.img
+                            initial={{ x: "150px" }}
+                            animate={{ x: 0 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            whileHover="hover"
+                            variants={animationVariants}
+
+                            src={img2} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
 
                     </> : null}
 
                     {props === "Skills" ? <>
-                        <img src={img1} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
+                        <motion.img
+
+                            initial={{ x: "150px" }}
+                            animate={{ x: 0 }}
+                            transition={{ duration: 0.5, ease: "easeOut" }}
+                            whileHover="hover"
+                            variants={animationVariants}
+                            src={img1} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
 
                     </> : null}
                 </div>
+
+
+                {/* <Readme/> */}
 
                 <h3>Projects</h3>
                 {/* <Project image={mind} /> */}
@@ -187,7 +236,7 @@ function Main() {
             </div>
 
         </> : <>
-            <div style={{ height: "90vh", display: "flex", justifyContent: "center", alignItems: "center", width: "100%",flexDirection:"column" }}>
+            <div style={{ height: "90vh", display: "flex", justifyContent: "center", alignItems: "center", width: "100%", flexDirection: "column" }}>
 
                 <Circles
                     height="200"

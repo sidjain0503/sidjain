@@ -36,8 +36,8 @@ function Projects() {
   return (
     <div style={{ width: "90%", margin: "auto" }}>
 
-      <h3>Projects 👨‍💻</h3>
-      <p style={{fontSize:"26px"}}>I believe Project based learning is the best way to learn programming . <br />
+      <h3 style={{fontFamily:"'Playfair Display', serif",fontSize:"36px",textAlign:'center'}}>Projects 👨‍💻</h3>
+      <p style={{fontSize:"16px",textAlign:"center",marginBottom:"40px"}}>I believe Project based learning is the best way to learn programming . <br />
 
         Here are my projects I made and will be adding some more interesting projects soon...🚀🚀.</p>
 

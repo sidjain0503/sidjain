@@ -64,11 +64,16 @@ function Footer() {
                     </div>
 
                     <div className="nav_list">
-                        <Link to="/" className="links" onClick={scrolltotop}>Home</Link>
-                        <Link to="/Projects" className="links" id="projects" onClick={scrolltotop} >Projects</Link>
-                        <Link to="/hire" className="links" onClick={scrolltotop}>Hire me</Link>
-                        <Link to="/admin" className="links" onClick={scrolltotop}>Admin</Link>
-                        <div className="links"><a href="https://siddharth-chopda.hashnode.dev/" target="_blank" style={{ fontWeight: "500" }}>Visit my blog</a></div>
+                        <Link to="/" className="links" style={{fontFamily:"'Playfair Display', serif",fontWeight:"400"
+                    }} onClick={scrolltotop}>Home</Link>
+                        <Link to="/Projects" className="links" style={{fontFamily:"'Playfair Display', serif",fontWeight:"400"
+                    }} id="projects" onClick={scrolltotop} >Projects</Link>
+                        <Link to="/hire" className="links"  style={{fontFamily:"'Playfair Display', serif",fontWeight:"400"
+                    }}onClick={scrolltotop}>Hire me</Link>
+                        <Link to="/admin" className="links" style={{fontFamily:"'Playfair Display', serif",fontWeight:"400"
+                    }} onClick={scrolltotop}>Admin</Link>
+                        <div className="links" style={{fontFamily:"'Playfair Display', serif",fontWeight:"400"
+                    }}><a href="https://siddharth-chopda.hashnode.dev/" target="_blank" style={{ fontWeight: "500" }}>Visit my blog</a></div>
 
 
                         {/* Side list Links to home,projects and contact  */}
@@ -77,7 +82,7 @@ function Footer() {
 
                 <form action="" className="footer-form">
                     {Contact ===false ? <>
-                        <h4 style={{textAlign:"center"}}>Contact me !  </h4>
+                        <h4 style={{textAlign:"center",fontFamily:"'Playfair Display', serif"}}>Contact me !  </h4>
                     <input type="text" name="name" id="" placeholder='Your Name' onChange={handleChange} />
                     <input type="email" name="email" id="" placeholder='Your Email' onChange={handleChange} />
                     <textarea name="message" id="message" cols="30" rows="10" placeholder='Your Message' onChange={handleChange} ></textarea>

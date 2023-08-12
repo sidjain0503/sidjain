@@ -1,0 +1,14 @@
+.testimonial_container{
+display: flex;    
+gap: 20px;
+overflow-x: scroll;
+padding: 20px 10px;
+}
+
+@media screen and (max-width:900px){
+    .testimonial_container{
+        flex-direction: column;
+        padding: 0;
+
+    }
+}

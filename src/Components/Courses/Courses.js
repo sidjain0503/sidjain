@@ -36,7 +36,7 @@ function Courses() {
 
             {loader ? <>
             
-            <h3>Certificates</h3>
+            <h3 style={{textAlign:"left",fontSize:"30px", fontFamily:"'Playfair Display', serif" }}>Certificates</h3 >
             <div className="certificates">
                
                <div className="certificate">
@@ -54,7 +54,7 @@ function Courses() {
                </div>
               
             </div>
-            <h3>Courses</h3>
+            <h3 style={{textAlign:"left",fontSize:"30px", fontFamily:"'Playfair Display', serif" }}>Courses</h3>
             <div className="courses">
                 <div className="course">
 
@@ -76,7 +76,7 @@ function Courses() {
             </> : 
             <>
              
-             <h3>Certificates</h3>
+             <h3 style={{textAlign:"left",fontSize:"30px", fontFamily:"'Playfair Display', serif" }}>Certificates</h3>
             <div className="certificates">
                
                <div className="certificate" style={{backgroundColor:"#dddd",height:"350px"}}>
@@ -85,7 +85,7 @@ function Courses() {
                </div>
 
             </div>
-            <h3>Courses</h3>
+            <h3 style={{textAlign:"left",fontSize:"30px", fontFamily:"'Playfair Display', serif" }}>Courses</h3>
             <div className="courses">
                 <div className="course" style={{backgroundColor:"#dddd",height:"350px"}}>
                 </div>

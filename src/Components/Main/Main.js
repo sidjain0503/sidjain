@@ -2,15 +2,16 @@ import React, { useEffect, useState } from 'react'
 import Project from '../Project/Project'
 import './Main.css'
 import Typewriter from 'typewriter-effect';
-import img1 from './img/sid1.jpg'
+import img3 from './img/sid.jpeg'
 import img2 from './img/sid2.jpg'
-import img3 from './img/sid3.jpg'
+import img1 from './img/sid3.jpg'
 import { Link } from 'react-router-dom';
 import { collection, getDocs, limit, query } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { Circles } from 'react-loader-spinner'
 import { motion } from "framer-motion";
 import Readme from './Readme';
+import CLientReview from '../ClientReview/ClientReview';
 
 
 
@@ -94,12 +95,12 @@ function Main() {
                     />
                 </h1>
                 <motion.h3
-
+                    className='code'
                     initial={{ x: "150px" }}
                     animate={{ x: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
 
-                    style={{ color: "hsl(242deg 88% 66%)" }}>Hi , I am Siddharth Chopda 👋 </motion.h3>
+                    style={{ color: "hsl(242deg 88% 66%)" ,fontFamily:"sans-serif"}}>Hi , I am Siddharth Chopda 👋 </motion.h3>
 
                 <div className="intro" style={{ display: "flex", justifyContent: "space-between" }}>
                     <motion.div
@@ -124,8 +125,8 @@ function Main() {
 
 
                                         {props === "Intro" ? <>
-                                            <strong style={{ color: "white", fontSize: '28px' }}>About me  </strong>
-                                            <p style={{ fontSize: "18px", fontWeight: "400" }}>
+                                            <strong style={{ color: "white", fontSize: '28px'  , fontFamily:"'Playfair Display', serif"}}>About me  </strong>
+                                            <p style={{ fontSize: "16px", fontWeight: "400" }}>
                                                 {i.about_me.map((m) => {
                                                     return <>
                                                         {m}
@@ -137,7 +138,7 @@ function Main() {
                                         </> : null}
 
                                         {props === "Education" ? <>
-                                            <strong style={{ color: "white", fontSize: '28px' }}>Education </strong>
+                                            <strong style={{ color: "white", fontSize: '28px' , fontFamily:"'Playfair Display', serif" }}>Education </strong>
 
                                             {i.education.map((ed) => {
                                                 return <>
@@ -153,7 +154,7 @@ function Main() {
 
 
 
-                                            <strong style={{ color: "white", fontSize: '28px' }}>Skills </strong>
+                                            <strong style={{ color: "white", fontSize: '28px' , fontFamily:"'Playfair Display', serif" }}>Skills </strong>
                                             <p>
                                                 <strong style={{ color: "white" }}>Tech Skills ~ </strong>
                                                 {i.Skills.Tech.map((t) => {
@@ -174,7 +175,7 @@ function Main() {
                                 })}
                             </p></div><div class="fade-in-move-on-scroll" ><p class="_20px-paragraph"></p></div></div></div>
                     </motion.div>
-                    {props === "Intro" ? <>
+                   
                         <motion.img
 
                             initial={{ x: "150px" }}
@@ -185,8 +186,8 @@ function Main() {
 
                             src={img3} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
 
-                    </> : null}
-                    {props === "Education" ? <>
+                  
+                    {/* {props === "Education" ? <>
                         <motion.img
                             initial={{ x: "150px" }}
                             animate={{ x: 0 }}
@@ -208,13 +209,15 @@ function Main() {
                             variants={animationVariants}
                             src={img1} alt="" id='my-img' style={{ background: "black", width: "30%", height: "400px", objectFit: "cover", margin: "32px 0px", borderRadius: "15px" }} />
 
-                    </> : null}
+                    </> : null} */}
                 </div>
 
 
+            <CLientReview/>
+
                 {/* <Readme/> */}
 
-                <h3>Projects</h3>
+                <h3 style={{fontFamily:"'Playfair Display', serif",fontSize:"36px"}}>Projects</h3>
                 {/* <Project image={mind} /> */}
                 {Projects.map((p) => {
                     return <>

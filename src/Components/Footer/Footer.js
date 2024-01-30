@@ -106,7 +106,7 @@ function Footer() {
                 <div >
                 </div>
 
-                <div>Copyright &copy; 2023
+                <div>Copyright &copy; 2024
                     developed by Siddharth Chopda
                 </div>
             </div>

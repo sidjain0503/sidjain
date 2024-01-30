@@ -69,9 +69,9 @@ function Header() {
                     <div onClick={() => { navigate("/"); scrolltotop(); closesidenav(); }} style={{ cursor: "pointer", fontSize: "28px", fontWeight: "bold", display: "flex", alignItems: "center" }}> 	&lt; SC /&gt;</div>
                     <div className="pages">
                         <Link onClick={() => { scrolltotop(); }} to="/projects" className={splitLocation[1] === "projects" ? " link active" : "link"}> &lt; Projects /&gt;</Link>
-                        <Link to={"/hire"} className={splitLocation[1] === "hire" ? " link active" : "link"} id="hire"> &lt; Hire me /&gt;</Link>
+                        {/* <Link to={"/hire"} className={splitLocation[1] === "hire" ? " link active" : "link"} id="hire"> &lt; Hire me /&gt;</Link> */}
                         <div className='link'><a href='https://siddharth-chopda.hashnode.dev/'> &lt; Blog /&gt;</a></div>
-                        <Link onClick={() => { scrolltotop(); }} to="/courses" className={splitLocation[1] === "courses" ? " link active" : "link"}> &lt; Courses and Certifications /&gt;</Link>
+                        {/* <Link onClick={() => { scrolltotop(); }} to="/courses" className={splitLocation[1] === "courses" ? " link active" : "link"}> &lt; Courses and Certifications /&gt;</Link> */}
 
 
 
@@ -88,7 +88,7 @@ function Header() {
                     <  Link onClick={() => { scrolltotop(); }} to="/projects" className='link'> &lt; Projects /&gt;</Link>
                     <Link onClick={() => { scrolltotop(); }} to="/courses" className={splitLocation[1] === "projects" ? " link active" : "link"}> &lt; Courses and Certifications /&gt;</Link>
                     <div className='link'><a href='https://siddharth-chopda.hashnode.dev/' > &lt; Blog /&gt;</a></div>
-                    <Link to={"/hire"} id="hire" className='link'> &lt; Hire me /&gt;</Link>
+                    {/* <Link to={"/hire"} id="hire" className='link'> &lt; Hire me /&gt;</Link> */}
 
 
 

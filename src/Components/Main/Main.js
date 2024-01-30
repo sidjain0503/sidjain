@@ -125,8 +125,8 @@ function Main() {
 
 
                                         {props === "Intro" ? <>
-                                            <strong style={{ color: "white", fontSize: '28px'  , fontFamily:"'Playfair Display', serif"}}>About me  </strong>
-                                            <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                                            <strong style={{ color: "white", fontSize: '28px'  , fontFamily:"'Playfair Display', serif",marginBottom:"20px"}}>About me  </strong>
+                                            <p style={{ fontSize: "16px", fontWeight: "400", paddingTop:"20px" }}>
                                                 {i.about_me.map((m) => {
                                                     return <>
                                                         {m}
@@ -142,7 +142,7 @@ function Main() {
 
                                             {i.education.map((ed) => {
                                                 return <>
-                                                    <p>
+                                                    <p style={{ fontSize: "22px", fontWeight: "400", paddingTop:"20px" }} >
                                                         {ed}
                                                     </p>
                                                 </>
@@ -156,10 +156,11 @@ function Main() {
 
                                             <strong style={{ color: "white", fontSize: '28px' , fontFamily:"'Playfair Display', serif" }}>Skills </strong>
                                             <p>
-                                                <strong style={{ color: "white" }}>Tech Skills ~ </strong>
+                                                <strong style={{ color: "white", }}>Tech Skills ~ </strong>
                                                 {i.Skills.Tech.map((t) => {
                                                     return <>
-                                                        <p>{t}</p>
+                                                        <p style={{ fontSize: "22px", fontWeight: "400", paddingTop:"20px" }}>
+                                                            {t}</p>
                                                     </>
                                                 })}
                                             </p>
